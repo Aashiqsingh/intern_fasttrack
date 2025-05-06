@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: teal;
+
+        animation-name: ani1;
+        animation-duration: 4s;
+        position: absolute;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        animation-direction: reverse;
+        animation-direction: alternate;
+        animation-direction: alternate-reverse;
+        animation-delay: 2s;
+    }
+    @keyframes ani1{
+        0%{
+            top: 0;
+            left: 0;
+        }
+        25%{
+            top: 0;
+            left: 400px;
+            background-color: blue;
+        }
+        50%{
+            left: 400px;
+            top: 400px;
+            background-color: green;
+        }
+        75%{
+            left: 0;
+            top: 400px;
+            background-color: brown;
+        }
+        100%{
+            left: 0;
+            top: 0;
+        }
+    }
+</style>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>
