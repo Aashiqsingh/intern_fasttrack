@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 300px;
+        width: 300px;
+        background-image: url('https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg');
+        background-size: cover;
+    }
+    .box::before{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 150px;
+        /* background-color: rgba(255, 0, 0, 0.651); */
+        background-image: url('https://cdn.outsideonline.com/wp-content/uploads/2023/03/Funny_Dog_S.jpg');
+        background-size: cover;
+        transition: 1s;
+        opacity: 0.3;
+    }
+    .box::after{
+        content: '';
+        position: absolute;
+        height: 300px;
+        width: 150px;
+        /* background-color: rgba(0, 128, 0, 0.644); */
+        background-image: url('https://m.media-amazon.com/images/I/71YvB1o9zPL._AC_UF1000,1000_QL80_.jpg');
+        background-size: cover;
+        opacity: 0.4;
+
+        right: 972px;
+        /* left: 157px; */
+        transition: 1s;
+        bottom: 250px;
+    }
+    .box:hover::before{
+        width: 0px;
+        height: 0;
+        transition: 1s;
+    }
+    .box:hover::after{
+        width: 0px;
+        height: 0;
+        transition: 1s;
+    }
+</style>
+<body>
+    
+    <!--  -->
+
+    <div class="box"></div>
+
+
+
+</body>
+</html>
