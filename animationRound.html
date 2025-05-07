@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        height: 200px;
+        width: 200px;
+        border: 10px solid rgba(0, 0, 0, 0.553);
+
+        border-radius: 50%;
+
+        border-top: 10px dotted red;
+
+        animation-name: ani1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        /* animation-direction: alternate; */
+        /* animation-direction: reverse; */
+    }
+    @keyframes ani1{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(-360deg);
+        }
+    }
+</style>
+<body>
+    
+    <div class="box"></div>
+
+</body>
+</html>

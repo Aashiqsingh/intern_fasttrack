@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        display: flex;
+        height: 400px;
+        border: 1px solid black;
+        justify-content: space-around;
+        align-items: center;
+        background-color: teal;
+    }
+    .logo{
+        width: 30%;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .para{
+        width: 65%;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+
+    @media(max-width: 500px){
+        .main{
+            background-color: red;
+            display: block;
+            height: auto;
+            padding: 10px;
+        }
+        .logo{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .logo img{
+            border-radius: 30px;
+        }
+        .para{
+            width: 100%;
+            color: white;
+        }
+    }
+
+
+    @media(min-width: 501px) and (max-width: 900px)
+    {
+        .main{
+            background-color: green;
+            height: auto;
+        }
+    }
+
+
+    @media(min-width: 900px){
+        .main{
+            background-color: blue;
+            height: auto;
+            padding: 10px;
+        }
+        .logo{
+            width: 45%;
+        }
+        .logo img{
+            border: 3px dotted yellow;
+            border-radius: 50px;
+        }
+        .para{
+            width: 50%;
+            color: white;
+        }
+    }
+
+
+</style>
+<body>
+    
+    <!-- mediaquerry : resoponsive -->
+
+
+    <div class="main">
+        <div class="logo">
+            <img src="https://aniportalimages.s3.amazonaws.com/media/details/HGFHJUGJU.jpg" alt="">
+        </div>
+        <div class="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nihil tempore aperiam voluptatibus corporis sunt. Nam perferendis inventore enim soluta eius aut quod cupiditate odit alias labore debitis nulla voluptatibus voluptas eligendi temporibus doloribus, esse sed. Debitis, autem dolores est sit voluptatibus cupiditate repellat veritatis modi repellendus doloremque dolor hic enim eveniet neque eligendi esse maxime inventore rerum repudiandae quo suscipit provident. Laudantium et veritatis asperiores quae incidunt ipsa vero sint provident distinctio harum, repellendus, blanditiis accusamus doloremque. Sit cumque atque adipisci voluptatum repudiandae laudantium, nobis nulla consequuntur, corrupti ipsam illum aspernatur voluptate cum ducimus vero officia porro. A iste esse earum voluptatem totam praesentium fugit consequuntur, maiores, voluptate perferendis obcaecati. Dolor expedita sunt voluptates? Maxime error incidunt doloribus, corrupti magni, blanditiis quibusdam impedit quis sed minus a fugit iste sint laboriosam velit necessitatibus molestias possimus rerum hic exercitationem modi. Nulla, quia et aliquid eos numquam dolorum mollitia quae iste, earum, necessitatibus odio facere autem eligendi itaque suscipit eveniet commodi architecto dolore aperiam eius. Odit fuga tempore dolores nisi nesciunt expedita voluptates repellat, distinctio aut voluptatem cum aliquid recusandae porro quas at, laborum rem, quo commodi unde quibusdam ullam. Perferendis laboriosam vero repellendus tenetur cupiditate quas, nobis atque provident magni.
+        </div>
+    </div>
+
+
+
+</body>
+</html>
